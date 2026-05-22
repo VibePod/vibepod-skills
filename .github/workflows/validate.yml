@@ -1,0 +1,28 @@
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pull skills-engine
+        run: docker pull vibepod/skills-engine:latest
+      - name: Validate each SKILL.md
+        run: |
+          set -euo pipefail
+          fail=0
+          for d in skills/*/; do
+            name="$(basename "$d")"
+            echo "::group::validate $name"
+            docker run --rm \
+              -v "$PWD/$d:/vibepod/source-in" \
+              vibepod/skills-engine:latest \
+              validate /vibepod/source-in || fail=1
+            echo "::endgroup::"
+          done
+          exit "$fail"
