@@ -4,14 +4,14 @@ A VibePod skill is a folder containing at minimum a `SKILL.md`. Optional sibling
 
 ## Minimum layout
 
-```
+```text
 my-skill/
   SKILL.md
 ```
 
 ## Recommended layout
 
-```
+```text
 my-skill/
   SKILL.md
   scripts/      # optional — non-executable by default
