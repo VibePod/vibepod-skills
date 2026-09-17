@@ -4,7 +4,7 @@ Curated skills for the [VibePod](https://vibepod.dev) skill subsystem. Install a
 
 ```bash
 vp skills add github:vibepod/vibepod-skills//skills/researcher
-vp skills add github:vibepod/vibepod-skills//skills/summarizer#v0.1.0
+vp skills add github:vibepod/vibepod-skills//skills/summarizer#0.1.0
 ```
 
 ## Skills
