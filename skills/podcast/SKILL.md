@@ -1,5 +1,5 @@
 ---
-name: Podcast
+name: podcast
 version: 0.1.0
 description: Plan, script, and produce a short podcast episode from a topic or set of source materials.
 tags:

@@ -1,5 +1,5 @@
 ---
-name: Summarizer
+name: summarizer
 version: 0.1.0
 description: Compress long inputs (docs, transcripts, threads) into structured, lossless-of-intent key-points.
 tags:
