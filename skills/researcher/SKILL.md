@@ -1,5 +1,5 @@
 ---
-name: Researcher
+name: researcher
 version: 0.1.0
 description: Investigate a topic, follow promising leads, and produce a concise, source-cited brief.
 tags:

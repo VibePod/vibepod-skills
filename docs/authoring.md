@@ -25,7 +25,7 @@ YAML frontmatter (required fields **bold**):
 
 | Field         | Type            | Notes                                                       |
 |---------------|-----------------|-------------------------------------------------------------|
-| **name**      | string          | Human-readable. Slugified to the install ID by default.     |
+| **name**      | string          | Lowercase letters, digits, hyphens (≤ 64 chars); match the folder name. Becomes the install ID by default. |
 | **description** | string        | One-sentence purpose. Shown in `vp skills list`.           |
 | version       | string          | Semver recommended. Stored in the lockfile.                 |
 | tags          | string[]        | Free-form discovery hints.                                  |

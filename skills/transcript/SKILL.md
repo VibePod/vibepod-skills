@@ -1,5 +1,5 @@
 ---
-name: Transcript
+name: transcript
 version: 0.1.0
 description: Turn recorded audio or video into a clean, speaker-attributed transcript with optional chapter marks.
 tags:
